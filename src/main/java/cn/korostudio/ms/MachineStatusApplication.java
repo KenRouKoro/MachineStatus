@@ -13,8 +13,8 @@ import java.util.Map;
 public class MachineStatusApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MachineStatusApplication.class, args);
         Setting.Init();
+        SpringApplication.run(MachineStatusApplication.class, args);
     }
 
     @RequestMapping("/")

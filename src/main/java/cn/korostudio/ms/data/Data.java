@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 public class Data {
@@ -27,12 +28,8 @@ public class Data {
 
         Server findServer = serverRepository.findByServerID((String) params.get("serverID"));
         Server server;
-        if (findServer!=null){
-            server = BeanUtil.fillBeanWithMap(params, findServer, false);
-        }else{
-            server = BeanUtil.fillBeanWithMap(params, new Server(), false);
-        }
-        logger.info("Get Server , name is:"+server.name + "  ID is:"+server.getServerID());
+        server = BeanUtil.fillBeanWithMap(params, Objects.requireNonNullElseGet(findServer, Server::new), false);
+        logger.debug("Get Server , name is:"+server.name + "  ID is:"+server.getServerID());
         serverRepository.save(server);
 
         return "OK";
@@ -46,6 +43,9 @@ public class Data {
             if(time - server.getUpdated() > 30){
                 server.setOnline(false);
                 server.setUptime("-");
+                server.setCpu(100);
+                server.setMemory_used(server.getMemory_total());
+                server.setHdd_used(server.getHdd_total());
             }
         }
         JSONObject jsonObject= new JSONObject();

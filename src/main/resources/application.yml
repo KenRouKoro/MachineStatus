@@ -1,0 +1,27 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: MachineStatus
+  freemarker:
+    allow-request-override: false
+    cache: true
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html;
+    suffix: .ftl
+    template-loader-path: classpath:/templates/,templates/
+    enabled: true
+  datasource:
+    url: jdbc:h2:~/.ms/server/db
+    driver-class-name: org.h2.Driver
+    username: admin
+    password: 123456
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      path: /h2admin
+      enabled: true

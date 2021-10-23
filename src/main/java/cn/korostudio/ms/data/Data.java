@@ -32,7 +32,7 @@ public class Data {
         }else{
             server = BeanUtil.fillBeanWithMap(params, new Server(), false);
         }
-        logger.info(server.toString());
+        logger.info("Get Server , name is:"+server.name + "  ID is:"+server.getServerID());
         serverRepository.save(server);
 
         return "OK";

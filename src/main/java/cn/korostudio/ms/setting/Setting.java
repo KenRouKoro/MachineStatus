@@ -10,11 +10,11 @@ public class Setting {
     protected static cn.hutool.setting.Setting setting;
 
     static {
-        setting = new cn.hutool.setting.Setting(FileUtil.touch(System.getProperty("user.home")+"/.ms/server/setting.setting"), CharsetUtil.CHARSET_UTF_8,true);
+        setting = new cn.hutool.setting.Setting(FileUtil.touch(System.getProperty("user.home") + "/.ms/server/setting.setting"), CharsetUtil.CHARSET_UTF_8, true);
     }
 
 
-    public static void Init(){
+    public static void Init() {
 
     }
 }

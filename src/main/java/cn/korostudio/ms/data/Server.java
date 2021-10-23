@@ -10,10 +10,6 @@ import javax.persistence.Id;
 @Data
 @Entity
 public class Server {
-    @Id
-    @GeneratedValue(generator="system_uuid")
-    @GenericGenerator(name="system_uuid",strategy="uuid")
-    private String id;
     protected String serverID;
     protected String name;
     protected String type;
@@ -36,8 +32,10 @@ public class Server {
     protected String custom;
     protected String region;
     protected long updated;
-
-
+    @Id
+    @GeneratedValue(generator = "system_uuid")
+    @GenericGenerator(name = "system_uuid", strategy = "uuid")
+    private String id;
 
 
 }

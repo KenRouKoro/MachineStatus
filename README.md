@@ -31,7 +31,8 @@ java -version
 openjdk version "17" 2021-09-14
 ```
 ### 2.建立目录结构
-**Windows：**
+**Windows**
+
 **建立C://Users/${汝的用户名}/.ms/server 文件夹**
 **在该目录下新建配置文件 setting.setting**
 **内容参考以下代码**
@@ -49,6 +50,7 @@ footer =
 ```
 ****
 **Linux**
+
 创建存放 运行包 的目录，这里以 ~/app 为例
 ``` shell
 mkdir ~/app && cd ~/app

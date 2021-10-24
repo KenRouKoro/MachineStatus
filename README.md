@@ -7,27 +7,27 @@
 目前介绍两种 Linux 发行版的安装方式，均为 OpenJRE。(推荐使用JDK17)
 
 #### CentOS 
-``` shell
+```shell
 sudo yum install java-latest-openjdk -y
 ```
 检查版本：
-``` shell
+```shell
 java -version
 ```
 如果输出以下类似内容即代表成功
-``` shell
+```shell
 openjdk version "17" 2021-09-14
 ```
 #### Ubuntu 
-``` shell
+```shell
 sudo apt-get install openjdk-latest-jre -y
 ```
 #### 检查版本：
-``` shell
+```shell
 java -version
 ```
 如果输出以下类似内容即代表成功
-``` shell
+```shell
 openjdk version "17" 2021-09-14
 ```
 ### 2.建立目录结构
@@ -36,7 +36,7 @@ openjdk version "17" 2021-09-14
 **建立C://Users/${汝的用户名}/.ms/server 文件夹**
 **在该目录下新建配置文件 setting.setting**
 **内容参考以下代码**
-``` yml
+```yml
 #网页标题
 title = MachineStatus
 #页面主标题
@@ -52,19 +52,19 @@ footer =
 **Linux**
 
 创建存放 运行包 的目录，这里以 ~/app 为例
-``` shell
+```shell
 mkdir ~/app && cd ~/app
 ```
 下载运行包
-``` shell
+```shell
 wget https://github.com/KenRouKoro/MachineStatus/releases/download/0.2-Alpha/MSS-0.0.2-Alpha.jar -O MSS.jar
 ```
 下载示例Spring配置文件
-``` shell
+```shell
 wget https://file.korostudio.cn/application_1635071908350.yml -O ./application.yaml 
 ```
 编辑Spring配置文件，配置数据库账户或者端口等
-``` shell
+```shell
 vim application.yaml
 ```
 ```yaml
@@ -76,15 +76,15 @@ spring:
     password: 123456
 ```
 创建 工作目录
-``` shell
+```shell
 mkdir ~/.ms/server && cd ~/.ms/server
 ```
 下载示例配置文件到工作目录
-``` shell
+```shell
 wget https://file.korostudio.cn/simple_setting_1635069866273.setting -O ./setting.setting
 ```
 编辑配置文件，配置自定义数据，请按照注释提示填写
-``` shell
+```shell
 vim setting.setting
 ```
 ```yaml
@@ -100,17 +100,17 @@ icon = https://file.korostudio.cn/alphaillust_68988937_20181210_114051_161751989
 footer = 
 ```
 ### 3.测试运行 MachineStatus
-``` shell
+```shell
 cd ~/app && java -jar MSS.jar
 ```
 如看到有类似以下日志输出，则代表启动成功。
-``` log
+```log
 [2021-10-24 18:46:46.739] [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-3620"]
 ```
 打开 http://ip: 端口号 即可看到监控界面
 ## 4.作为服务运行
 1.下载 MachineStatus 官方的 mss.service 模板
-``` shell
+```shell
 wget  https://file.korostudio.cn/mss_1635084422897.service -O /etc/systemd/system/mss.service
 ```
 2.修改 mss.service
@@ -119,7 +119,7 @@ vim /etc/systemd/system/mss.service
 ```
 3.修改配置
 YOUR_JAR_PATH：MachineStatus 运行包的绝对路径，例如 /root/app/MSS.jar，注意：此路径不支持 ~ 符号。
-```
+```yaml
 [Unit]
 Description=MSS Service
 Documentation=https://github.com/KenRouKoro/MachineStatus

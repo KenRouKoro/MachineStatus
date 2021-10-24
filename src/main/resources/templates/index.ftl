@@ -15,21 +15,21 @@
         let header_subtitle = '${header_subtitle}';
         let custom_footer = '${footer}';
     </script>
-    <script src="../config.js"></script>
+    <script src="config.js"></script>
     <link rel="icon"
           href="${icon!}">
     <title>${title!}</title>
-    <link href="../css/index.ee87b86f.css" rel="preload" as="style">
-    <link href="../js/chunk-vendors.c808eacf.js" rel="preload" as="script">
-    <link href="../js/index.98cc5779.js" rel="preload" as="script">
-    <link href="../css/index.ee87b86f.css" rel="stylesheet">
+    <link href="css/index.ee87b86f.css" rel="preload" as="style">
+    <link href="js/chunk-vendors.c808eacf.js" rel="preload" as="script">
+    <link href="js/index.98cc5779.js" rel="preload" as="script">
+    <link href="css/index.ee87b86f.css" rel="stylesheet">
 </head>
 <body>
 <noscript><strong>We're sorry but MachineStatus doesn't work properly without JavaScript enabled. Please enable it to
         continue.</strong></noscript>
 <div id="app"></div>
 <script src="//cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="../js/chunk-vendors.c808eacf.js"></script>
-<script src="../js/index.98cc5779.js"></script>
+<script src="js/chunk-vendors.c808eacf.js"></script>
+<script src="js/index.98cc5779.js"></script>
 </body>
 </html>

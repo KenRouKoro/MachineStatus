@@ -8604,3 +8604,379 @@
 [2021-10-24 03:06:03.855] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 [2021-10-24 03:06:03.862] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 [2021-10-24 03:06:03.869] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 03:12:08.494] [main] [INFO ] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [cn.korostudio.ms.MachinestatusApplicationTests], using SpringBootContextLoader
+[2021-10-24 03:12:08.502] [main] [INFO ] [org.springframework.test.context.support.AbstractContextLoader] - Could not detect default resource locations for test class [cn.korostudio.ms.MachinestatusApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-10-24 03:12:08.503] [main] [INFO ] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [cn.korostudio.ms.MachinestatusApplicationTests]: MachinestatusApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-10-24 03:12:08.683] [main] [INFO ] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration cn.korostudio.ms.MachineStatusApplication for test class cn.korostudio.ms.MachinestatusApplicationTests
+[2021-10-24 03:12:08.931] [main] [INFO ] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2021-10-24 03:12:08.948] [main] [INFO ] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5b11a194, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37bd68c3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@60f7cc1d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11eadcba, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4721d212, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b065145, org.springframework.test.context.transaction.TransactionalTestExecutionListener@45cff11c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@207ea13, org.springframework.test.context.event.EventPublishingTestExecutionListener@4bff1903, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62dae540, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5827af16, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@654d8173, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@56c9bbd8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@630cb4a4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@636e8cc]
+[2021-10-24 03:12:09.564] [main] [INFO ] [cn.korostudio.ms.MachinestatusApplicationTests] - Starting MachinestatusApplicationTests using Java 16.0.1 on KoroStudio-PC with PID 21332 (started by koro in E:\workspace\machinestatus)
+[2021-10-24 03:12:09.567] [main] [INFO ] [cn.korostudio.ms.MachinestatusApplicationTests] - No active profile set, falling back to default profiles: default
+[2021-10-24 03:12:11.403] [main] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 03:12:11.518] [main] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interfaces.
+[2021-10-24 03:12:13.099] [main] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 03:12:13.197] [main] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 03:12:13.327] [main] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 03:12:13.570] [main] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 03:12:13.884] [main] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 03:12:13.927] [main] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 03:12:15.372] [main] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 03:12:15.413] [main] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 03:12:19.390] [main] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 03:12:19.720] [main] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 03:12:21.360] [main] [INFO ] [cn.korostudio.ms.MachinestatusApplicationTests] - Started MachinestatusApplicationTests in 12.365 seconds (JVM running for 14.281)
+[2021-10-24 03:12:22.018] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 03:12:22.023] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 03:12:22.031] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 19:32:29.417] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 11084 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 19:32:29.419] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 19:32:29.482] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 19:32:29.482] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 19:32:30.219] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 19:32:30.299] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+[2021-10-24 19:32:30.900] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 19:32:30.911] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:32:30.912] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 19:32:30.912] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 19:32:31.041] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 19:32:31.041] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1558 ms
+[2021-10-24 19:32:31.067] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 19:32:31.221] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 19:32:31.225] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 19:32:31.373] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 19:32:31.424] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 19:32:31.556] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 19:32:31.661] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 19:32:32.222] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 19:32:32.227] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:32:32.727] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 19:32:32.959] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 19:32:32.977] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:32:33.021] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 19:32:33.031] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 4.087 seconds (JVM running for 5.373)
+[2021-10-24 19:32:42.847] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 19:32:42.847] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 19:32:42.848] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 19:52:36.319] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:52:36.324] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 19:52:36.328] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 19:52:41.005] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 5236 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 19:52:41.008] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 19:52:41.052] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 19:52:41.052] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 19:52:41.594] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 19:52:41.645] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+[2021-10-24 19:52:42.130] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 19:52:42.137] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:52:42.137] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 19:52:42.138] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 19:52:42.249] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 19:52:42.249] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1197 ms
+[2021-10-24 19:52:42.273] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 19:52:42.385] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 19:52:42.390] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 19:52:42.514] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 19:52:42.546] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 19:52:42.634] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 19:52:42.718] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 19:52:43.151] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 19:52:43.159] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:52:43.599] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 19:52:43.800] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 19:52:43.822] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:52:43.865] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 19:52:43.878] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.261 seconds (JVM running for 4.77)
+[2021-10-24 19:52:44.000] [http-nio-8090-exec-2] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 19:52:44.000] [http-nio-8090-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 19:52:44.001] [http-nio-8090-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+[2021-10-24 19:54:09.962] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:54:09.965] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 19:54:09.968] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 19:54:14.496] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 14692 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 19:54:14.498] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 19:54:14.555] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 19:54:14.555] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 19:54:15.243] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 19:54:15.302] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+[2021-10-24 19:54:15.835] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 19:54:15.843] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:54:15.843] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 19:54:15.843] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 19:54:15.942] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 19:54:15.942] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1386 ms
+[2021-10-24 19:54:15.967] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 19:54:16.073] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 19:54:16.077] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 19:54:16.210] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 19:54:16.248] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 19:54:16.338] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 19:54:16.417] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 19:54:16.882] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 19:54:16.890] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:54:17.348] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 19:54:17.531] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 19:54:17.550] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:54:17.592] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 19:54:17.604] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.542 seconds (JVM running for 4.772)
+[2021-10-24 19:54:32.742] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 19:54:32.742] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 19:54:32.743] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 19:55:01.924] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:55:01.928] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 19:55:01.931] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 19:55:06.266] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 14152 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 19:55:06.267] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 19:55:06.312] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 19:55:06.313] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 19:55:06.887] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 19:55:06.936] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+[2021-10-24 19:55:07.432] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 19:55:07.440] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:55:07.440] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 19:55:07.440] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 19:55:07.549] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 19:55:07.550] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1237 ms
+[2021-10-24 19:55:07.575] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 19:55:07.679] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 19:55:07.686] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 19:55:07.827] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 19:55:07.861] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 19:55:07.944] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 19:55:08.033] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 19:55:08.489] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 19:55:08.497] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:55:08.960] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 19:55:09.162] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 19:55:09.179] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:55:09.219] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 19:55:09.230] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.351 seconds (JVM running for 4.51)
+[2021-10-24 19:55:13.003] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 19:55:13.003] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 19:55:13.005] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+[2021-10-24 19:57:42.326] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:57:42.329] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 19:57:42.360] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 19:57:46.315] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 9200 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 19:57:46.318] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 19:57:46.367] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 19:57:46.368] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 19:57:46.982] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 19:57:47.031] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+[2021-10-24 19:57:47.552] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 19:57:47.559] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:57:47.560] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 19:57:47.560] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 19:57:47.674] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 19:57:47.674] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1305 ms
+[2021-10-24 19:57:47.698] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 19:57:47.803] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 19:57:47.808] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 19:57:47.927] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 19:57:47.966] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 19:57:48.044] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 19:57:48.122] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 19:57:48.541] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 19:57:48.548] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 19:57:48.977] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 19:57:49.176] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 19:57:49.197] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 19:57:49.236] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 19:57:49.246] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.328 seconds (JVM running for 4.43)
+[2021-10-24 19:57:49.508] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 19:57:49.508] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 19:57:49.509] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 20:04:25.710] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 20:04:25.715] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 20:04:25.718] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 20:04:30.698] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 4468 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 20:04:30.705] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 20:04:30.750] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 20:04:30.750] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 20:04:31.349] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 20:04:31.400] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+[2021-10-24 20:04:31.931] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 20:04:31.939] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 20:04:31.939] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 20:04:31.939] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 20:04:32.065] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 20:04:32.066] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1314 ms
+[2021-10-24 20:04:32.092] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 20:04:32.207] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 20:04:32.214] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 20:04:32.345] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 20:04:32.376] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 20:04:32.465] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 20:04:32.555] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 20:04:33.096] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 20:04:33.106] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 20:04:33.600] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 20:04:33.810] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 20:04:33.832] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 20:04:33.884] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 20:04:33.895] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.601 seconds (JVM running for 5.074)
+[2021-10-24 20:04:34.016] [http-nio-8090-exec-2] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 20:04:34.016] [http-nio-8090-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 20:04:34.017] [http-nio-8090-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 21:02:26.788] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:02:26.794] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 21:02:26.797] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 21:32:57.598] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 31300 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 21:32:57.601] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 21:32:57.648] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 21:32:57.648] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 21:32:58.142] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 21:32:58.193] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+[2021-10-24 21:32:58.651] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 21:32:58.660] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:32:58.660] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 21:32:58.661] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 21:32:58.763] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 21:32:58.763] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1114 ms
+[2021-10-24 21:32:58.785] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 21:32:58.896] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 21:32:58.901] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 21:32:59.033] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 21:32:59.082] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 21:32:59.201] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 21:32:59.289] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 21:32:59.743] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 21:32:59.750] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:33:00.174] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 21:33:00.356] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 21:33:00.371] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:33:00.408] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 21:33:00.417] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.132 seconds (JVM running for 4.271)
+[2021-10-24 21:33:07.684] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 21:33:07.684] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 21:33:07.685] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 21:37:03.805] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:37:03.808] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 21:37:03.811] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 21:37:10.777] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 20392 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 21:37:10.779] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 21:37:10.836] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 21:37:10.836] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 21:37:11.679] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 21:37:11.736] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+[2021-10-24 21:37:12.343] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 21:37:12.350] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:37:12.350] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 21:37:12.350] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 21:37:12.454] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 21:37:12.454] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1617 ms
+[2021-10-24 21:37:12.480] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 21:37:12.584] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 21:37:12.588] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 21:37:12.708] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 21:37:12.739] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 21:37:12.827] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 21:37:12.907] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 21:37:13.325] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 21:37:13.331] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:37:13.739] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 21:37:13.913] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 21:37:13.930] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:37:13.969] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 21:37:13.980] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.716 seconds (JVM running for 5.743)
+[2021-10-24 21:37:14.009] [http-nio-8090-exec-2] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 21:37:14.010] [http-nio-8090-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 21:37:14.010] [http-nio-8090-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+[2021-10-24 21:39:56.896] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:39:56.900] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 21:39:56.903] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 21:40:04.003] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 26548 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 21:40:04.006] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 21:40:04.057] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 21:40:04.057] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 21:40:04.692] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 21:40:04.775] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+[2021-10-24 21:40:05.237] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 21:40:05.245] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:40:05.245] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 21:40:05.245] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 21:40:05.343] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 21:40:05.343] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1285 ms
+[2021-10-24 21:40:05.371] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 21:40:05.467] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 21:40:05.471] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 21:40:05.595] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 21:40:05.623] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 21:40:05.696] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 21:40:05.764] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 21:40:06.180] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 21:40:06.188] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:40:06.968] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 21:40:07.178] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 21:40:07.195] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:40:07.234] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 21:40:07.243] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 3.864 seconds (JVM running for 6.889)
+[2021-10-24 21:40:12.576] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 21:40:12.576] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 21:40:12.577] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 21:41:50.943] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:41:50.947] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 21:41:50.949] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 21:41:56.511] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 28148 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 21:41:56.518] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 21:41:56.660] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 21:41:56.660] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 21:41:57.772] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 21:41:57.827] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+[2021-10-24 21:41:58.464] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 21:41:58.471] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:41:58.471] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 21:41:58.471] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 21:41:58.570] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 21:41:58.570] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1909 ms
+[2021-10-24 21:41:58.594] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 21:41:58.695] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 21:41:58.700] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 21:41:58.820] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 21:41:58.850] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 21:41:58.930] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 21:41:59.032] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 21:41:59.545] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 21:41:59.554] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:41:59.973] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 21:42:00.168] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 21:42:00.188] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:42:00.226] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 21:42:00.237] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 4.639 seconds (JVM running for 6.576)
+[2021-10-24 21:42:20.395] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 21:42:20.395] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 21:42:20.396] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 21:43:49.045] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:43:49.049] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 21:43:49.051] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2021-10-24 21:43:54.198] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Starting MachineStatusApplication using Java 16.0.1 on KoroStudio-PC with PID 30504 (E:\workspace\machinestatus\target\classes started by koro in E:\workspace\machinestatus)
+[2021-10-24 21:43:54.202] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - No active profile set, falling back to default profiles: default
+[2021-10-24 21:43:54.245] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-10-24 21:43:54.246] [restartedMain] [INFO ] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-10-24 21:43:54.885] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-10-24 21:43:54.944] [restartedMain] [INFO ] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+[2021-10-24 21:43:55.533] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8090 (http)
+[2021-10-24 21:43:55.543] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:43:55.544] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2021-10-24 21:43:55.544] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-10-24 21:43:55.672] [restartedMain] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2021-10-24 21:43:55.672] [restartedMain] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1425 ms
+[2021-10-24 21:43:55.704] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2021-10-24 21:43:55.856] [restartedMain] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2021-10-24 21:43:55.862] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2admin'. Database available at 'jdbc:h2:~/.ms/server/db'
+[2021-10-24 21:43:56.022] [restartedMain] [INFO ] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-10-24 21:43:56.064] [restartedMain] [INFO ] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-10-24 21:43:56.216] [restartedMain] [INFO ] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-10-24 21:43:56.398] [restartedMain] [INFO ] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-10-24 21:43:56.891] [restartedMain] [INFO ] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-10-24 21:43:56.905] [restartedMain] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:43:57.400] [restartedMain] [INFO ] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] - Adding welcome page template: index
+[2021-10-24 21:43:57.617] [restartedMain] [INFO ] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2021-10-24 21:43:57.646] [restartedMain] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8090"]
+[2021-10-24 21:43:57.696] [restartedMain] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8090 (http) with context path ''
+[2021-10-24 21:43:57.711] [restartedMain] [INFO ] [cn.korostudio.ms.MachineStatusApplication] - Started MachineStatusApplication in 4.001 seconds (JVM running for 5.205)
+[2021-10-24 21:43:57.792] [http-nio-8090-exec-1] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-10-24 21:43:57.792] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2021-10-24 21:43:57.793] [http-nio-8090-exec-1] [INFO ] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[2021-10-24 21:47:48.806] [SpringApplicationShutdownHook] [INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-10-24 21:47:48.810] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2021-10-24 21:47:48.812] [SpringApplicationShutdownHook] [INFO ] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.

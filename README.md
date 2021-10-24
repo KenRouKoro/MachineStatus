@@ -55,7 +55,7 @@ mkdir ~/app && cd ~/app
 ```
 下载运行包
 ``` shell
-wgeth ttps://github.com/KenRouKoro/MachineStatus/releases/download/0.1-Alpha/MS-0.1Alpha.jar -O MSS.jar
+wgeth https://github.com/KenRouKoro/MachineStatus/releases/download/0.2-Alpha/MSS-0.0.2-Alpha.jar -O MSS.jar
 ```
 下载示例Spring配置文件
 ``` shell

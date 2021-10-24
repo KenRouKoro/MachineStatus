@@ -65,6 +65,14 @@ wget https://file.korostudio.cn/application_1635071908350.yml -O ./application.y
 ``` shell
 vim application.yaml
 ```
+```yaml
+server:
+  port: 3620
+spring:
+  datasource:
+    username: admin
+    password: 123456
+```
 创建 工作目录
 ``` shell
 mkdir ~/.ms/server && cd ~/.ms/server
@@ -76,6 +84,18 @@ wget https://file.korostudio.cn/simple_setting_1635069866273.setting -O ./settin
 编辑配置文件，配置自定义数据，请按照注释提示填写
 ``` shell
 vim setting.setting
+```
+```yaml
+#网页标题
+title = MachineStatus
+#页面主标题
+header-title = Machine Status
+#页面副标题
+header-subtitle = 用MachineStatus来偷窥服务器们的网站~~
+#网站icon地址，需要加上http://或者https://
+icon = https://file.korostudio.cn/alphaillust_68988937_20181210_114051_1617519897520.png@s_0,w_512,l_1,f_png,d_progressive,q_50
+#自定义fotter，如不了解可删去，注意！部分字符需要转义。
+footer = 
 ```
 ### 3.测试运行 MachineStatus
 ``` shell

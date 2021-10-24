@@ -37,13 +37,52 @@ openjdk version "17" 2021-09-14
 **内容参考以下代码**
 ``` yml
 #网页标题
-title = 科洛的服务器
+title = MachineStatus
 #页面主标题
-header-title = 科洛的服务器
+header-title = Machine Status
 #页面副标题
 header-subtitle = 用MachineStatus来偷窥服务器们的网站~~
-#网站icon地址
+#网站icon地址，需要加上http://或者https://
 icon = https://file.korostudio.cn/alphaillust_68988937_20181210_114051_1617519897520.png@s_0,w_512,l_1,f_png,d_progressive,q_50
-#自定义fotter，如不了解可删去
-footer = <br/>
+#自定义fotter，如不了解可删去，注意！部分字符需要转义。
+footer = 
 ```
+****
+**Linux**
+创建存放 运行包 的目录，这里以 ~/app 为例
+``` shell
+mkdir ~/app && cd ~/app
+```
+下载运行包
+``` shell
+wgeth ttps://github.com/KenRouKoro/MachineStatus/releases/download/0.1-Alpha/MS-0.1Alpha.jar -O MSS.jar
+```
+下载示例Spring配置文件
+``` shell
+wget https://file.korostudio.cn/application_1635071908350.yml -O ./application.yaml 
+```
+编辑Spring配置文件，配置数据库账户或者端口等
+``` shell
+vim application.yaml
+```
+创建 工作目录
+``` shell
+mkdir ~/.ms/server && cd ~/.ms/server
+```
+下载示例配置文件到工作目录
+``` shell
+wget https://file.korostudio.cn/simple_setting_1635069866273.setting -O ./setting.setting
+```
+编辑配置文件，配置自定义数据，请按照注释提示填写
+``` shell
+vim setting.setting
+```
+### 3.测试运行 MachineStatus
+``` shell
+cd ~/app && java -jar MSS.jar
+```
+如看到有类似以下日志输出，则代表启动成功。
+``` log
+[2021-10-24 18:46:46.739] [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-3620"]
+```
+打开 http://ip: 端口号 即可看到监控界面

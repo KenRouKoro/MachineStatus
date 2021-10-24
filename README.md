@@ -55,7 +55,7 @@ mkdir ~/app && cd ~/app
 ```
 下载运行包
 ``` shell
-wgeth https://github.com/KenRouKoro/MachineStatus/releases/download/0.2-Alpha/MSS-0.0.2-Alpha.jar -O MSS.jar
+wget https://github.com/KenRouKoro/MachineStatus/releases/download/0.2-Alpha/MSS-0.0.2-Alpha.jar -O MSS.jar
 ```
 下载示例Spring配置文件
 ``` shell
@@ -86,3 +86,49 @@ cd ~/app && java -jar MSS.jar
 [2021-10-24 18:46:46.739] [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-3620"]
 ```
 打开 http://ip: 端口号 即可看到监控界面
+## 4.作为服务运行
+1.下载 MachineStatus 官方的 mss.service 模板
+``` shell
+wget  https://file.korostudio.cn/mss_1635084422897.service -O /etc/systemd/system/mss.service
+```
+2.修改 mss.service
+```shell
+vim /etc/systemd/system/mss.service
+```
+3.修改配置
+YOUR_JAR_PATH：MachineStatus 运行包的绝对路径，例如 /root/app/MSS.jar，注意：此路径不支持 ~ 符号。
+```
+[Unit]
+Description=MSS Service
+Documentation=https://github.com/KenRouKoro/MachineStatus
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/java -server -Xms256m -Xmx256m -jar YOUR_JAR_PATH
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+StandOutput=syslog
+
+StandError=inherit
+
+[Install]
+WantedBy=multi-user.target
+```
+4.重新加载 systemd
+```shell
+systemctl daemon-reload
+```
+5.运行服务
+```shell
+systemctl start mss
+```
+6.在系统启动时启动服务
+```shell
+systemctl enable mss
+```
+您可以查看服务日志检查启动状态
+```shell
+journalctl -n 20 -u mss
+```

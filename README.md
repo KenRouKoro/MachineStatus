@@ -109,15 +109,35 @@ cd ~/app && java -jar MSS.jar
 ```
 打开 http://ip: 端口号 即可看到监控界面
 ## 4.作为服务运行
-1.下载 MachineStatus 官方的 mss.service 模板
+1.切换到根目录,因为service运行空间在根目录
+```shell
+cd /
+```
+2.下载示例Spring配置文件
+```shell
+wget https://file.korostudio.cn/application_1635071908350.yml -O ./application.yaml 
+```
+3.编辑Spring配置文件，配置数据库账户或者端口等
+```shell
+vim application.yaml
+```
+```yaml
+server:
+  port: 3620
+spring:
+  datasource:
+    username: admin
+    password: 123456
+```
+4.下载 MachineStatus 官方的 mss.service 模板
 ```shell
 wget  https://file.korostudio.cn/mss_1635084422897.service -O /etc/systemd/system/mss.service
 ```
-2.修改 mss.service
+5.修改 mss.service
 ```shell
 vim /etc/systemd/system/mss.service
 ```
-3.修改配置
+6.修改配置
 YOUR_JAR_PATH：MachineStatus 运行包的绝对路径，例如 /root/app/MSS.jar，注意：此路径不支持 ~ 符号。
 ```yaml
 [Unit]
@@ -138,15 +158,15 @@ StandError=inherit
 [Install]
 WantedBy=multi-user.target
 ```
-4.重新加载 systemd
+7.重新加载 systemd
 ```shell
 systemctl daemon-reload
 ```
-5.运行服务
+8.运行服务
 ```shell
 systemctl start mss
 ```
-6.在系统启动时启动服务
+9.在系统启动时启动服务
 ```shell
 systemctl enable mss
 ```

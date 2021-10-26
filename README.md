@@ -1,5 +1,5 @@
 # MachineStatus
-### MachineStatus服务器监控，一个开箱即用的服务器监控系统。
+### MachineStatus服务器监控，一个开箱即用的服务器监控系统。支持Windows • Linux • macOS • Unix (AIX, FreeBSD, OpenBSD, Solaris)。
 ## 如何使用
 ### 1.依赖检查
 目前运行 MachineStatus 的最低依赖要求为 JRE 16，请务必确保在进行下面操作之前已经正确安装了 JRE。
@@ -174,3 +174,6 @@ systemctl enable mss
 ```shell
 journalctl -n 20 -u mss
 ```
+## 其他说明
+### 感谢
+ServerStatus-Hotaru https://github.com/cokemine/ServerStatus-Hotaru MIT License 

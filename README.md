@@ -78,6 +78,7 @@ spring:
 ```
 创建 工作目录
 ```shell
+mkdir ~/.ms
 mkdir ~/.ms/server && cd ~/.ms/server
 ```
 下载示例配置文件到工作目录

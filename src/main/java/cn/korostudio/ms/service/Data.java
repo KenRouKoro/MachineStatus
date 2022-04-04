@@ -47,8 +47,9 @@ public class Data {
 
         long time = System.currentTimeMillis() / 1000;
         if(time-120>lastCheck){
+            lastCheck=time;
             for (Server server : servers) {
-                if (time - server.getUpdated() > 10) {
+                if (time - server.getUpdated() > 120) {
                     server.setOnline(false);
                     server.setUptime("-");
                     server.setCpu(100);

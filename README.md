@@ -34,9 +34,7 @@ openjdk version "17" 2021-09-14
 ### 2.建立目录结构
 **Windows**
 
-**建立C://Users/${汝的用户名}/.ms/server 文件夹**
-**在该目录下新建配置文件 setting.setting**
-**内容参考以下代码**
+**在运行目录下寻炸setting.setting内容参考以下代码**
 ```yml
 #网页标题
 title = MachineStatus
@@ -76,14 +74,9 @@ spring:
     username: admin
     password: 123456
 ```
-创建 工作目录
+下载示例配置文件到运行目录
 ```shell
-mkdir ~/.ms
-mkdir ~/.ms/server && cd ~/.ms/server
-```
-下载示例配置文件到工作目录
-```shell
-wget https://file.korostudio.cn/simple_setting_1635069866273.setting -O ./setting.setting
+wget https://file.korostudio.cn/simple_setting_1635069866273.setting -O ~/app/mss/config/setting.setting
 ```
 编辑配置文件，配置自定义数据，请按照注释提示填写
 ```shell

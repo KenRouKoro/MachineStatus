@@ -3,7 +3,7 @@
 ### 前端来自ServerStatus-Hotaru https://github.com/cokemine/ServerStatus-Hotaru 修改而来，在此特别感谢。
 ## 如何使用
 ### 1.依赖检查
-目前运行 MachineStatus 的最低依赖要求为 JRE 16，请务必确保在进行下面操作之前已经正确安装了 JRE。
+目前运行 MachineStatus 的最低依赖要求为 JRE 17，请务必确保在进行下面操作之前已经正确安装了 JRE。
 
 目前介绍两种 Linux 发行版的安装方式，均为 OpenJRE。(推荐使用JDK17)
 

@@ -1,9 +1,10 @@
-package cn.korostudio.ms.data;
+package cn.korostudio.ms.service;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import cn.korostudio.ms.data.Server;
 import cn.korostudio.ms.sql.ServerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,8 @@ import java.util.Objects;
 @RestController
 public class Data {
 
+    protected static long lastCheck=0;
+
     static protected Logger logger = LoggerFactory.getLogger(Data.class);
 
     @Autowired
@@ -31,7 +34,8 @@ public class Data {
         Server findServer = serverRepository.findByServerID((String) params.get("serverID"));
         Server server;
         server = BeanUtil.fillBeanWithMap(params, Objects.requireNonNullElseGet(findServer, Server::new), false);
-        logger.debug("Get Server , name is:" + server.name + "  ID is:" + server.getServerID());
+        server.setUpdated(System.currentTimeMillis() / 1000);
+        logger.debug("Get Server , name is:" + server.getName() + "  ID is:" + server.getServerID());
         serverRepository.save(server);
 
         return "OK";
@@ -40,16 +44,22 @@ public class Data {
     @GetMapping("/data")
     public String data() {
         List<Server> servers = serverRepository.findAll();
+
         long time = System.currentTimeMillis() / 1000;
-        for (Server server : servers) {
-            if (time - server.getUpdated() > 30) {
-                server.setOnline(false);
-                server.setUptime("-");
-                server.setCpu(100);
-                server.setMemory_used(server.getMemory_total());
-                server.setHdd_used(server.getHdd_total());
+        if(time-120>lastCheck){
+            for (Server server : servers) {
+                if (time - server.getUpdated() > 10) {
+                    server.setOnline(false);
+                    server.setUptime("-");
+                    server.setCpu(100);
+                    server.setMemory_used(server.getMemory_total());
+                    server.setHdd_used(server.getHdd_total());
+                }
             }
         }
+
+
+
         JSONObject jsonObject = new JSONObject();
         JSONArray jsonArray = JSONUtil.parseArray(servers);
         jsonObject.set("servers", jsonArray);

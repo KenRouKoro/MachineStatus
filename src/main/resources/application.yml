@@ -13,7 +13,7 @@ spring:
     template-loader-path: classpath:/templates/,templates/
     enabled: true
   datasource:
-    url: jdbc:h2:~/.ms/server/db
+    url: jdbc:h2:file:./mss/database
     driver-class-name: org.h2.Driver
     username: admin
     password: 123456

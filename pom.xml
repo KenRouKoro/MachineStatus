@@ -10,7 +10,7 @@
     </parent>
     <groupId>cn.korostudio</groupId>
     <artifactId>machinestatus</artifactId>
-    <version>0.0.2-Alpha</version>
+    <version>0.1.0-Alpha</version>
     <name>MachineStatus</name>
     <description>MachineStatus</description>
     <properties>

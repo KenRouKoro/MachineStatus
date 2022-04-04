@@ -11,9 +11,9 @@
         }
     </script>
     <script>
-        let header_title = '${header_title}';
-        let header_subtitle = '${header_subtitle}';
-        let custom_footer = '${footer}';
+        var header_title = '${header_title}';
+        var header_subtitle = '${header_subtitle}';
+        var custom_footer = '${footer}';
     </script>
     <script src="config.js"></script>
     <link rel="icon"

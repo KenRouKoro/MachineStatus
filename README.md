@@ -1,5 +1,5 @@
 # MachineStatus
-### MachineStatus服务器监控，一个开箱即用的服务器监控系统。支持Windows • Linux • macOS • Unix (AIX, FreeBSD, OpenBSD, Solaris)。
+### MachineStatus服务器监控，一个开箱即用的服务器监控系统。支持Windows • Linux • macOS(x86 And ARM M1) • Unix (AIX, FreeBSD, OpenBSD, Solaris)。
 ### 前端来自ServerStatus-Hotaru https://github.com/cokemine/ServerStatus-Hotaru 修改而来，在此特别感谢。
 ## 如何使用
 ### 1.依赖检查
@@ -46,6 +46,8 @@ header-subtitle = 用MachineStatus来偷窥服务器们的网站~~
 icon = https://file.korostudio.cn/alphaillust_68988937_20181210_114051_1617519897520.png@s_0,w_512,l_1,f_png,d_progressive,q_50
 #自定义fotter，如不了解可删去，注意！部分字符需要转义。
 footer = 
+#连接密码，客户端需与服务端的密码一致，默认为korostudio
+password = 
 ```
 ****
 **Linux**
@@ -169,6 +171,7 @@ systemctl enable mss
 ```shell
 journalctl -n 20 -u mss
 ```
+# 5.通过MCSM启动
 ## 其他说明
 ### 感谢
 ServerStatus-Hotaru https://github.com/cokemine/ServerStatus-Hotaru MIT License 

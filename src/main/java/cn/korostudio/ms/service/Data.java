@@ -5,7 +5,11 @@ import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import cn.korostudio.ms.data.Server;
+import cn.korostudio.ms.setting.Setting;
 import cn.korostudio.ms.sql.ServerRepository;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,54 +23,69 @@ import java.util.Map;
 import java.util.Objects;
 
 @RestController
+@Slf4j
 public class Data {
 
-    protected static long lastCheck=0;
+    private ServerRepository serverRepository;
 
-    static protected Logger logger = LoggerFactory.getLogger(Data.class);
+    @Getter
+    private static ServerRepository StaticServerRepository = null;
+
 
     @Autowired
-    private ServerRepository serverRepository;
+    public void setServerRepository(ServerRepository serverRepository) {
+        this.serverRepository = serverRepository;
+        StaticServerRepository = serverRepository;
+    }
 
     @PostMapping("/update")
     public String upDate(@RequestParam Map<String, Object> params) {
+
+        String password = Setting.getSetting().getStr("remove-password","korostudio");
+        String getPassword = (String) params.get("password");
+        if(!Objects.equals(password, getPassword)){
+            return "{\"status\":\"error_password\"}";
+        }
 
         Server findServer = serverRepository.findByServerID((String) params.get("serverID"));
         Server server;
         server = BeanUtil.fillBeanWithMap(params, Objects.requireNonNullElseGet(findServer, Server::new), false);
         server.setUpdated(System.currentTimeMillis() / 1000);
-        logger.debug("Get Server , name is:" + server.getName() + "  ID is:" + server.getServerID());
+        log.debug("Get Server , name is:" + server.getName() + "  ID is:" + server.getServerID());
         serverRepository.save(server);
 
-        return "OK";
+        return "{\"status\":\"ok\"}";
     }
 
     @GetMapping("/data")
     public String data() {
+
         List<Server> servers = serverRepository.findAll();
-
-        long time = System.currentTimeMillis() / 1000;
-        if(time-120>lastCheck){
-            lastCheck=time;
-            for (Server server : servers) {
-                if (time - server.getUpdated() > 120) {
-                    server.setOnline(false);
-                    server.setUptime("-");
-                    server.setCpu(100);
-                    server.setMemory_used(server.getMemory_total());
-                    server.setHdd_used(server.getHdd_total());
-                }
-            }
-        }
-
-
-
         JSONObject jsonObject = new JSONObject();
         JSONArray jsonArray = JSONUtil.parseArray(servers);
         jsonObject.set("servers", jsonArray);
         jsonObject.set("updated", System.currentTimeMillis() / 1000);
 
-
         return jsonObject.toStringPretty();
+    }
+    @PostMapping("/remove")
+    public  String remove(@RequestParam Map<String, Object> params){
+        String password = Setting.getSetting().getStr("remove-password","korostudio");
+        String getPassword = (String) params.get("password");
+        if(!Objects.equals(password, getPassword)){
+            return "{\"status\":\"error_password\"}";
+        }
+        String id = (String) params.get("serverID");
+        if (id == null){
+            return "{\"status\":\"null_id\"}";
+        }
+        Server findServer = serverRepository.findByServerID(id);
+        if(findServer == null){
+            return "{\"status\":\"no_such_server\"}";
+        }
+
+        serverRepository.delete(findServer);
+
+        return "{\"status\":\"ok\"}";
     }
 }
